@@ -4,4 +4,30 @@ h1 {
     font-size: 50px;
     color: red;
     text-align: center;
+    
+}
+
+
+h6 {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+}
+
+.topbar {
+    float: right;
+}
+
+.topbar-li {
+    display: inline;
+    text-align: center;
+    width: 80px;
 }

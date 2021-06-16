@@ -1,9 +1,10 @@
 h1 {
     font-family: Verdana;
-    font-weight: normal;
+    font-weight: bolder;
     font-size: 50px;
-    color: red;
+    color: rgb(239, 246, 247);
     text-align: center;
+    
     
 }
 
@@ -12,6 +13,8 @@ h6 {
     text-align: center;
     font-style: italic;
     font-size: 20px;
+    color: white;
+    background-color: teal;
 }
 
 .wrapper {
@@ -23,11 +26,31 @@ h6 {
 }
 
 .topbar {
-    float: right;
+    position: fixed;
+    right: 1%;
+    background-color: black;
+    opacity: 0.75;
+    width: 100%;
+    
 }
 
 .topbar-li {
     display: inline;
-    text-align: center;
-    width: 80px;
+    font-size: 20px;
+}
+
+.bodyImage {
+    background: url(/banner.jpg);
+    background-size: cover;
+    
+    
+    
+}
+
+banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
 }

@@ -10,7 +10,7 @@ h1 {
     text-align: center;    
 }
 
-h2, h3, a.resume {
+h2, h3, a.resume, p {
     text-align: center;
     color: whitesmoke;
 }

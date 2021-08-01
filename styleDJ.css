@@ -2,7 +2,7 @@
     
     width: 400px;
     height: 600px;
-    background-color: yellow;
+    background-image: url(/doodlebackground.png);
     position: relative;
     font-size: 200px;
     text-align: center;
@@ -13,6 +13,7 @@
     height: 85px;
     background-color: red;
     position: absolute;
+    z-index: 5;
 }
 
 .platform {

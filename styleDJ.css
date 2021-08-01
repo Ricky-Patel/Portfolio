@@ -1,0 +1,51 @@
+.gridDJ {
+    
+    width: 400px;
+    height: 600px;
+    background-color: yellow;
+    position: relative;
+    font-size: 200px;
+    text-align: center;
+}
+
+.doodler {
+    width: 60px;
+    height: 85px;
+    background-color: red;
+    position: absolute;
+}
+
+.platform {
+    width: 85px;
+    height: 15px;
+    background-color: green;
+    position: absolute;
+}
+
+
+.floatcontainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    position: relative;
+    top: 80px;
+    
+}
+
+.restart {
+    position: relative;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
+.caption {
+    text-align: center;
+    
+}

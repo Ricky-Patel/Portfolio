@@ -11,12 +11,14 @@ h1 {
 }
 
 h2, h3, a.resume, p {
+    font-family: Verdana;
     text-align: center;
     color: whitesmoke;
 }
 
 a {
     text-decoration: none;
+    font-family: Verdana;
     color: whitesmoke
 }
 
@@ -32,24 +34,40 @@ a {
 
 .grid {
     /* border: 2px blue solid; */
-    width: 1920px;
-    height: 1024px;
+    /*width: 1920px;
+    height: 1024px;*/
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    grid-column-gap: 30px;
+    gap: 30px;
     margin: auto;
 
   }
 
   .backgroundIMG {
-      background-image: url(/plane.png);
-      max-width: 100%;
+    background-image: url(/plane.png);
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
   }
 
   .bannerMid {
     grid-row-start: 6;
     grid-row-end: 8;
+    grid-column: 3 / span 8;
+  }
+
+  .bannerMidAbout {
+    grid-row-start: 5;
+    grid-row-end: 11;
+    grid-column: 2 / span 10;
+  }
+
+  .resumeMid {
+    grid-row-start: 6;
+    grid-row-end: 9;
     grid-column: 3 / span 8;
   }
 
@@ -83,7 +101,9 @@ a.button {
 
 .centerText {
     line-height: 0;
-    -webkit-text-stroke: 0.5px black;
+    -webkit-text-stroke: 0.3px black;
+    margin: 10px;
+    
 }
 
 .aboutMid {
@@ -92,15 +112,27 @@ a.button {
     grid-column: 3 / span 8;
   }
 
+.projectsMid {
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column: 3 / span 8;
+}
+
 .contactTop {
     grid-row-start: 2;
     grid-row-end: 4;
     grid-column: 3 / span 8;
 }
 
+.contactMe {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column: 3 / span 8;
+}
+
 .card1 {
-    grid-row-start: 7;
-    grid-row-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 8;
     grid-column: 2 / span 3;
     
     
@@ -108,32 +140,103 @@ a.button {
 }
 
 .card2 {
-    grid-row-start: 7;
-    grid-row-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 8;
     grid-column: 5 / span 3;
 }
 
 .card3 {
-    grid-row-start: 7;
-    grid-row-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 8;
     grid-column: 8 / span 3;
 }
 
 
-/*
-.topbar-li {
-    display: inline;
-    font-size: 20px;
-    color: whitesmoke;
-}
+@media only screen and (max-width: 1000px) {
 
-.topbar {
-    position: fixed;
-    right: 1%;
-    background-color: black;
-    opacity: 0.75;
-    width: 100%;
-    outline: none;
+.grid {
+    
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    
+    }
+
+    .contactTop {
+        
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row: 2;
+        
+    }
+
+    .bannerMid {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+    
+    .bannerMidAbout {
+        grid-row-start: 3;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .projectsMid {
+        grid-row-start: 3;
+        grid-row-end: 6;
+        grid-column: 1 / span 4;
+    }
+
+    .backgroundIMG {
+        background-image: url(/plane.png);
+        max-width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+
+    .headerBar {
+        z-index: 100;
+    }
+
+    .contactMe {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column: 1 / span 3;
+    }
+    
+    .card1 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column: 1 / span 3;
+    }
+    
+    .card2 {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column: 1 / span 3;
+    }
+    
+    .card3 {
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column: 1 / span 3;
+    }
+
+    .resumeMid {
+        grid-row-start: 4;
+        grid-row-end: 6;
+        grid-column: 1 / span 3;
+      }
+
+
+
+
+
     
 }
-*/

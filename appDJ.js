@@ -133,6 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (e.key ==="ArrowUp") {
             moveStraight();
         }
+        
     }
 
     function moveLeft() {
@@ -148,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else moveRight();
             
         }, 30)
-
+        
     }
 
     function moveRight() {
@@ -164,6 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else moveLeft();
             
         }, 30)
+        
     }
 
     function moveStraight() {
@@ -181,9 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function startAgain() {
-        console.log('testing1')
         if (isGameOver === true) {
-            console.log('testing2')
             document.addEventListener('keyup', restart);
             
             
